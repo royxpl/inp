@@ -1,0 +1,12 @@
+<div ng-show="vm.err" class="alert alert-info">
+    <strong>Info!</strong> {{vm.err}}
+</div>
+<div class="row">
+    <div class="bs-callout bs-callout-primary">
+      <h4>{{vm.blog.titulo}}</h4>
+      <p>{{vm.blog.categoria}}</p>
+      <p>{{vm.blog.descrpcion}}</p>
+      <p>{{vm.blog.autor}}</p>
+      <button ng-click="vm.onclik()">Eliminar</button>
+    </div>
+</div>

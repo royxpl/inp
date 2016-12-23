@@ -1,0 +1,29 @@
+<div ng-show="vm.err" class="alert alert-info">
+    <strong>Info!</strong> {{vm.err}}
+</div>
+<form ng-submit="vm.onSubmit()">
+
+  <div class="form-group">
+    <label for="titulo">Titulo</label>
+    <input type="text" class="form-control" id="titulo" ng-model="vm.blog.titulo">
+  </div>
+
+
+
+  <div class="form-group">
+    <label for="body">Categoria</label>
+    <imput type="text" class="form-control" id="body" ng-model="vm.blog.categoria"> </textarea>
+  </div>
+
+<div class="form-group">
+    <label for="titulo">descrpcion</label>
+    <textarea type="text" class="form-control" id="descripcion" ng-model="vm.blog.descripcion"> </textarea> 
+  </div>
+
+<div class="form-group">
+    <label for="titulo">autor</label>
+    <input type="text" class="form-control" id="autor" ng-model="vm.blog.autor">
+  </div>
+
+  <button type="submit" class="btn btn-default">ENVIAR</button>
+</form>
